@@ -2,7 +2,7 @@
 https://www.ntop.org/products/traffic-analysis/ntop/
 
 # docker
-docker run --rm -it --net=host -p 3333:3000 ntop/ntopng:stable -i eth0
+docker run --rm -it --net=host -p 3333:3000 ntop/ntopng.dev -i eth0
 
 # cacti
 ## https://github.com/babyfenei/docker-cacti/blob/master/README_ZH.md
