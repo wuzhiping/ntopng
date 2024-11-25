@@ -3,7 +3,8 @@ https://www.ntop.org/products/traffic-analysis/ntop/
 
 # docker
 ## https://github.com/ntop/docker-ntop
-## docker run --rm -it --net=host -e NTOP_CONFIG="-r 127.0.0.1:7379 -i eth0 -w 0.0.0.0:3000"  ntop/ntopng:stable
+### docker run -p 7379:6379 --name redis -d redis:7.0.12
+### docker run --rm -it --net=host -e NTOP_CONFIG="-r 127.0.0.1:7379 -i eth0 -w 0.0.0.0:3000"  ntop/ntopng:stable
 
 # cacti
 ## https://github.com/babyfenei/docker-cacti/blob/master/README_ZH.md
